@@ -46,7 +46,7 @@ namespace Testapp.Pageclasses
         /// Search on site with DuckDuckGo
         /// </summary>
         /// <param name="searchQuery"></param>
-        public void search (string searchQuery)
+        public void search (String searchQuery)
         {
             Search.FindEl(driver, searchEditBox).SendKeys(searchQuery);
             Search.FindEl(driver, searchButton).Click();

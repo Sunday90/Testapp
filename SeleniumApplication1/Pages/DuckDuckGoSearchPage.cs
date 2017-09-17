@@ -36,7 +36,7 @@ namespace Testapp.Pageclasses
         /// Get text from search editbox field
         /// </summary>
         /// <returns>Text from field</returns>
-        public string getSearchQueryText()
+        public String getSearchQueryText()
         {
             return Search.FindEl(driver, searchEditBox).GetAttribute("value");
         }

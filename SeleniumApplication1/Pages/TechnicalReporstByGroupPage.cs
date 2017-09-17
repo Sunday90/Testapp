@@ -40,10 +40,10 @@ namespace Testapp.Pageclasses
 
 
         /// <summary>
-        /// Dictionary with two types of values. First is string - it`s a key to get access to info about any type of subgroups.
+        /// Dictionary with two types of values. First is String - it`s a key to get access to info about any type of subgroups.
         /// Second value is object of internal class "ReportsGroupsType". It incapsulates information about each subgroup. 
         /// </summary>
-        private Dictionary<String, ReportsGroupsType> selectDocumentTypesValues = new Dictionary<string, ReportsGroupsType>
+        private Dictionary<String, ReportsGroupsType> selectDocumentTypesValues = new Dictionary<String, ReportsGroupsType>
                     {
                          { "All", new ReportsGroupsType("all", "All Documents (sorted by group)") },
                          { "Standards Only", new ReportsGroupsType("stds", "Standards Only (sorted by group)") },
@@ -113,7 +113,7 @@ namespace Testapp.Pageclasses
         /// </summary>
         /// <param name="number">Number of group in List</param>
         /// <returns></returns>
-        public string getGroupNameByNumber (int number)
+        public String getGroupNameByNumber (int number)
         {
             findGroups();
             int groupsCount = getGroupsCount();

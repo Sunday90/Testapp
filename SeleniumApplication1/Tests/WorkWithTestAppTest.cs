@@ -79,7 +79,7 @@ namespace Testapp.Tests
             mp.openTechReportsByGroup();
             Assert.True(trbgp.CheckPageIsLoaded(), "Technical reports by group page didn`t load!");
 
-            string groupName = "Standards Only";
+            String groupName = "Standards Only";
             trbgp.selectDocumentTypes(groupName);
             Assert.True(trbgp.СheckSubGroupSelected(groupName), "Subgroup " + groupName + " isn`t selected!");
 
@@ -101,7 +101,7 @@ namespace Testapp.Tests
             mp.search(groupNameForSearch.Split(' ')[0]);
             Assert.True(ddgsp.CheckPageIsLoaded(), "DuckDuckGo page didn`t loaded!");
 
-            string searchQuerytext = ddgsp.getSearchQueryText();
+            String searchQuerytext = ddgsp.getSearchQueryText();
             logger.Info(searchQuerytext);
 
             Assert.True(searchQuerytext.StartsWith("site:w3.org"), "Duck duck go search query doesn`t start with \"site:w3.org\" string!");
