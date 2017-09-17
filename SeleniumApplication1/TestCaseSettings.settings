@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Testapp" GeneratedClassName="TestCaseSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="browserType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">chrome</Value>
+    </Setting>
+    <Setting Name="baseURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.w3.org</Value>
+    </Setting>
+    <Setting Name="webDriverPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\webdriver\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
